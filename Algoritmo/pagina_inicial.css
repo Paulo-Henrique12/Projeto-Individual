@@ -1,0 +1,143 @@
+.img1 img{
+    border-radius: 20px;
+}
+
+
+
+main{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.nomeRobos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.atomPrincipal{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
+
+.imgAtom img{
+    border-radius: 20px;
+    width: 300px;
+}
+
+.textoAtom, .textoZeus, .textoNoisy, .textoMidas, .textoAmbush, .textoTwin, .textoMetro{
+    border: 2px, solid;
+    border-radius: 20px;
+}
+
+.textoAtom, .textoZeus{
+    display: flex;
+    width: 300px;
+    align-items: center;
+}
+
+.zeusPrincipal{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.imgZeus img{
+    border-radius: 20px;
+    width: 300px;
+    height: 250px;
+}
+
+
+
+.noisyPrincipal{
+    display: flex;
+   justify-content: center;
+}
+
+.imgNoisy img{
+    border-radius: 20px;
+    width: 200px;
+    height: 250px;
+}
+
+.textoNoisy{
+    width: 200px;
+}
+
+.midasPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgMidas img{
+    border-radius: 20px;
+    width: 300px;
+    height: 250px;
+}
+
+.textoMidas{
+    width: 200px;
+}
+
+.twinPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgTwin img{
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+}
+
+.textoTwin{
+    width: 200px;
+}
+
+.ambushPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgAmbush img{
+    border-radius: 20px;
+    width: 250px;
+
+}
+
+.textoAmbush{
+    width: 200px;
+}
+
+.metroPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgMetro img{
+    border-radius: 20px;
+    width: 300px;
+}
+
+.textoMetro{
+    width: 150px;
+    
+}
+
+
+.paragrafo{
+    border: 1px solid;
+    border-radius: 20px;
+    width: 50vw;
+    font-size: 19px;
+}
