@@ -1,3 +1,30 @@
+header{
+    display: flex;
+    background-color: black;
+}
+
+ .esquerda{
+    width: 1300px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    color: white;
+}
+
+header .direita{
+    margin: 1vw;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color: white;
+}
+
+ .imgEsquerda img{
+    width: 500px;
+ }
+
+
 .img1 img{
     border-radius: 20px;
 }
