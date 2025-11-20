@@ -47,7 +47,10 @@
     </div>
     <div class="container">
       <div class="card card-cadastro">
-        <h2>Bem-vindo!</h2>
+        <div class="textoCadastro">
+          <h2>Bem-vindo, realize seu cadastro para participar do quiz!</h2>
+        </div>
+        
         <div class="formulario">
           <!--
                          Para inserir mais um campo, copie uma das inputs abaixo.
@@ -56,22 +59,20 @@
         
         <div id="textoCadastro">
           <div class="campo">
-            <span>Nome:</span>
-            <input id="nome_input" type="text" placeholder="Seu nome" />
+            <input id="nome_input" type="text" placeholder="Nome" />
           </div>
           <div class="campo">
-            <span>E-mail:</span>
-            <input id="email_input" type="text" placeholder="meuemail@provedor.com" />
+            <input id="email_input" type="text" placeholder="E-mail" />
           </div>
           <div class="campo">
-            <span>Senha:</span>
-            <input id="senha_input" type="password" placeholder="******" />
+            <input id="senha_input" type="password" placeholder="senha" />
           </div>
           <div class="campo">
-            <span>Confirmação da Senha:</span>
-            <input id="confirmacao_senha_input" type="password" placeholder="******" />
+            <input id="confirmacao_senha_input" type="password" placeholder="confirmar senha" />
+          </div><div class="botaoCadastrar">
+            <button class="botao" onclick="cadastrar()">Cadastrar</button>
           </div>
-          <button class="botao" onclick="cadastrar()">Cadastrar</button>
+          
         </div>
 
             </div>

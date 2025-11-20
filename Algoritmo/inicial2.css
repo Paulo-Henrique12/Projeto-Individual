@@ -90,7 +90,7 @@ body {
 /* MISSÃO VISÃO VALORES */
 
 .social {
-  background-color: #e5e5e5;
+  background-color: black;
   display: flex;
 }
 
@@ -103,6 +103,7 @@ body {
 }
 
 .social .container .boxes {
+  flex-direction: column;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -142,7 +143,7 @@ body {
 
 .login {
   height: var(--tamanho-login);
-  background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+  background-image: url('https://i.pinimg.com/originals/5a/99/70/5a9970522ad74e287c50476e9c297061.jpg');
   background-size: cover;
 }
 
@@ -152,21 +153,40 @@ body {
   height: 100%;
 }
 
+/* background: url('https://www.papeldeparede.etc.br/fotos/wp-content/uploads/a-luta-vai-comecar-.jpg');
+  background-size: cover;
+  background-position: center; */
+
 .card {
-  background: url('https://www.papeldeparede.etc.br/fotos/wp-content/uploads/a-luta-vai-comecar-.jpg');
+  border: 2px solid darkcyan;
+  background: url('https://img.freepik.com/vetores-gratis/fundo-preto-com-luz-de-ponto-de-foco_1017-27230.jpg?semt=ais_hybrid&w=740&q=80');
   background-size: cover;
   background-position: center;
-  width: 50%;
+  opacity: 80%;
+  width: 25vw;
   background-color: #e5e5e5;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  color: palevioletred;
+  color: gray;
   flex-direction: column;
-  height: fit-content;
+  height: 70%;
   padding: 20px 0;
 }
+
+
+
+.textoCadastro{
+  width: 14vw;
+}
+
+/* .botaoCadastrar{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 99%;
+} */
 
 .card h2 {
   margin: 0;
@@ -212,10 +232,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  padding: 5px 0;
+  padding: 10px 0;
+  width: 20vw;
 }
 
 .botao {
+
   cursor: pointer;
   font-family: "Barlow", sans-serif;
   border: 0;
@@ -223,9 +245,10 @@ body {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
-  background-color: #ED145B;
-  width: 120px;
-  height: 30px;
+  background-color: gray;
+  width: 20vw;
+  height: 2.5vw;
+  border-radius: 10px;
   align-self: center;
   margin-top: 20px;
 }
@@ -266,6 +289,17 @@ body {
 .card_erro #mensagem_erro{
   font-weight: 500;
   font-size: 20px;
+}
+
+.textoInicial {
+  display: flex;
+  justify-content: left;
+  width: 30vw;
+  line-height: 3vw;
+  font-size: 2vw;
+  border: 3px solid darkcyan;
+  border-radius: 20px;
+  margin-right: 61.5vw;
 }
 
 .formulario .tipo_campo {
@@ -386,6 +420,25 @@ input {
       transition: opacity 1s ease-in-out; /* aqui vem o fade */
     }
 
-#imagensSite div.ativo {
+.sobreMim{
+  width: 60vw;
+  font-size: 2vw;
+  border: 3px solid darkcyan;
+  border-radius: 20px;
+  line-height: 3vw;
+  color: white;
+}
+
+#imagensSite img.ativo {
+      width: 100%;
+      height: 100%;
       opacity: 1; /* só a imagem ativa aparece */
     }
+
+.ativo2{
+  left: 5vw;
+  display: flex;
+  color: white;
+
+
+}
