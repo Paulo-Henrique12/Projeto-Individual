@@ -22,8 +22,7 @@ body {
 }
 
 .header {
-  height: var(--tamanho-header);
-  border-bottom: 2px solid #32b9cd;
+  height: 100px;
 }
 
 .header .container {
@@ -34,7 +33,7 @@ body {
 
 .header a {
   text-decoration: none;
-  color: #e3b062;
+  color: white;
 }
 
 .agora {
@@ -42,16 +41,17 @@ body {
 }
 
 .navbar {
-  width: 300px;
+  font-size: 1.2vw;
+  width: 400px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  color: #e3b062;
+  color: white;
 }
 
 .titulo {
-  color: #32b9cd;
+  color: rgba(221, 184, 17, 0.822);
   width: fit-content;
   font-weight: 500;
 }
@@ -65,7 +65,7 @@ body {
 .banner {
   height: 45vw;
   color: white;
-  background-image: url('https://occ-0-8407-2218.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABVMWFlVh72Vaz4EHhpUFaMflBjWC0qfcz88xU3fjZvY-7Aqi2QAPGB0NkDRNi2LyOHumzX8Xcq4Hxz7ehLl0f86Wshe0Vuos7vOB.jpg?r=998');
+  background-image: url('background\ pagina\ inicial.jpg');
   background-size: cover;
 
 }
@@ -123,7 +123,7 @@ body {
 /* FOOTER */
 
 .footer {
-  background-color: #32b9cd;
+  background-color: rgba(221, 184, 17, 0.822);
   height: 150px;
   color: #fff;
   display: flex;
@@ -132,7 +132,7 @@ body {
 
 .footer .container {
   justify-content: center;
-  text-align: center;
+
 }
 
 .footer .container .version {
@@ -143,7 +143,7 @@ body {
 
 .login {
   height: var(--tamanho-login);
-  background-image: url('https://i.pinimg.com/originals/5a/99/70/5a9970522ad74e287c50476e9c297061.jpg');
+  background-image: url('background\ login\ e\ cadastro.jpg');
   background-size: cover;
 }
 
@@ -158,8 +158,8 @@ body {
   background-position: center; */
 
 .card {
-  border: 2px solid darkcyan;
-  background: url('https://img.freepik.com/vetores-gratis/fundo-preto-com-luz-de-ponto-de-foco_1017-27230.jpg?semt=ais_hybrid&w=740&q=80');
+  border: 2px solid rgba(221, 184, 17, 0.822);
+  background: url('background\ bloco\ login\ e\ cadastro.png');
   background-size: cover;
   background-position: center;
   opacity: 80%;
@@ -173,6 +173,29 @@ body {
   flex-direction: column;
   height: 70%;
   padding: 20px 0;
+}
+
+.card-login{
+  border: 2px solid rgba(221, 184, 17, 0.822);
+  background: url('background\ bloco\ login\ e\ cadastro.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 80%;
+  width: 25vw;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: gray;
+  flex-direction: column;
+  height: 70%;
+  padding: 20px 0;
+  
+}
+
+.card-cadastro{
+display: flex;
 }
 
 
@@ -191,11 +214,14 @@ body {
 .card h2 {
   margin: 0;
   font-size: 30px;
+  justify-content: center;
+  text-align: center;
 }
 
 .formulario {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .formulario img{
@@ -297,7 +323,7 @@ body {
   width: 30vw;
   line-height: 3vw;
   font-size: 2vw;
-  border: 3px solid darkcyan;
+  border: 3px solid rgba(221, 184, 17, 0.822);
   border-radius: 20px;
   margin-right: 61.5vw;
 }
@@ -423,10 +449,17 @@ input {
 .sobreMim{
   width: 60vw;
   font-size: 2vw;
-  border: 3px solid darkcyan;
+  border: 3px solid rgba(221, 184, 17, 0.822);
   border-radius: 20px;
   line-height: 3vw;
   color: white;
+}
+
+.sobreMimPrincipal{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 4vw;
 }
 
 #imagensSite img.ativo {
@@ -442,3 +475,59 @@ input {
 
 
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
+.boxes h4{
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 80vw;
+  font-size: 2vw;
+}
+
+.textoFilme{
+  width: 50vw;
+  font-size: 2vw;
+  border: 3px solid rgba(221, 184, 17, 0.822);
+  border-radius: 20px;
+  line-height: 3vw;
+  color: white;
+}
+
+.historiaPrincipal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4vw;
+}
+
+.imagemHistoria img{
+  width: 40vw;
+  
+}
+
+.contatoInstagram{
+  font-size: 1.3vw;
+}
+
+.contatoEmail{
+  font-size: 1.3vw;
+}
+
+.textoFooter{
+  justify-content: center;
+  word-spacing: 0.2vw;
+  width: 20vw;
+  font-size: 1.2vw;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
