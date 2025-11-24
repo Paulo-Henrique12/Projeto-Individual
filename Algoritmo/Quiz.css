@@ -1,0 +1,175 @@
+
+.paginaQuiz {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 8px;
+}
+    
+.usuario {
+    padding: 5vw;
+    justify-content: center;
+    align-items: baseline;
+    background-color: black;
+    color: white;
+    display: flex;
+    font-size: 1.5vw;
+    border: 2px solid black;
+    border-radius: 1vw;
+    grid-row: span 7 / span 7;
+    height: 38.5vw;
+}
+
+.questoes {
+    height: 4vw;
+    padding: 5vw;
+    background-color: rgba(221, 188, 40, 0.822);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8vw;
+    border: 2px solid black;
+    border-radius: 1vw;
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+}
+
+.alternativas {
+    font-size: 5vw;
+    height: 23.8vw;
+    justify-content: center;
+    align-items: baseline;
+    border: 2px solid black;
+    border-radius: 1vw;
+    padding: 5vw;
+    grid-column: span 4 / span 4;
+    grid-row: span 5 / span 5;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.questao1 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 1.8vw;
+}
+
+.alternativasBotoes{
+    gap: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.alternativa1 {
+    justify-content: center;
+    display: flex;
+    width: 40vw;
+    height: 4vw;
+    padding: 15px; 
+    font-size: 16px;
+}
+
+.alternativa2 {
+    justify-content: center;
+    display: flex;
+    width: 40vw;
+    height: 4vw;
+    padding: 15px; 
+    font-size: 16px;
+}
+
+.alternativa3 {
+    justify-content: center;
+    display: flex;
+     width: 40vw;
+    height: 4vw;
+    padding: 15px; 
+    font-size: 16px;
+}
+
+.alternativa4 {
+    justify-content: center;
+    display: flex;
+    width: 40vw;
+    height: 4vw;
+    padding: 15px; 
+    font-size: 16px;
+}
+
+/* Não usar pure white or pure black: https://uxplanet.org/basicdesign-never-use-pure-black-in-typography-36138a3327a6 */
+/* The 4-point grid system: https://medium.com/@sainzkike/controlling-spacing-in-design-systems-multiple-spacing-9bf1afec87f */
+
+:root {
+    --primary-brand-color: #ED145B;
+    --secondary-brand-color: #0762C8;
+    --success: #198754;
+    --success-dark: #095c36;
+    --success-light: #9dd3ba;
+    --warning: #ffc107;
+    --warning-dark: #705400;
+    --warning-light: #fdebb3;
+    --danger: #dc3545;
+    --danger-dark: #990c19;
+    --danger-light: #f0c1c6;
+    --new-gray: #CCCCCC;
+    --new-black: #212427;
+    --new-white: #E8E8E8;
+}
+
+body {
+    color: var(--new-black);
+    background-color: var(--new-white);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.flex-colunar {
+    display: flex;
+    flex-direction: column;
+}
+
+.width-fit-content {
+    width: fit-content;
+}
+
+.padding-8 {
+    padding: 8px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-success-with-bg {
+    color: var(--success-dark);
+    background-color: var(--success-light);
+}
+
+.text-warning-with-bg {
+    color: var(--warning-dark);
+    background-color: var(--warning-light);
+}
+
+.text-danger-with-bg {
+    color: var(--danger-dark);
+    background-color: var(--danger-light);
+}
+
+.text-new-gray {
+    color: var(--new-gray);
+}
+
+.botaoSair {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+        
