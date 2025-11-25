@@ -4,8 +4,9 @@ USE GigantesDeAco;
 
 CREATE TABLE pessoa(
 idPessoa INT PRIMARY KEY AUTO_INCREMENT,
-nome VARCHAR(45),
-conhecimento INT
+email VARCHAR(45) UNIQUE,
+senha VARCHAR(45),
+nome VARCHAR(45)
 );
 
 
@@ -26,3 +27,6 @@ qtdErros INT,
 CONSTRAINT pkComposta
 	PRIMARY KEY (fkPessoa, fkQuiz, idResultados)
 );
+
+DROP DATABASE GigantesDeAco;
+

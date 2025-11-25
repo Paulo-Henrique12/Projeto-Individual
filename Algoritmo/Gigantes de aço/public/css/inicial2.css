@@ -65,7 +65,7 @@ body {
 .banner {
   height: 45vw;
   color: white;
-  background-image: url('background\ pagina\ inicial.jpg');
+  background-image: url('../assets/background\ pagina\ inicial.jpg');
   background-size: cover;
 
 }
@@ -143,7 +143,7 @@ body {
 
 .login {
   height: var(--tamanho-login);
-  background-image: url('background\ login\ e\ cadastro.jpg');
+  background-image: url('../assets/background\ login\ e\ cadastro.jpg');
   background-size: cover;
 }
 
@@ -159,7 +159,7 @@ body {
 
 .card {
   border: 2px solid rgba(221, 184, 17, 0.822);
-  background: url('background\ bloco\ login\ e\ cadastro.png');
+  background: url('../assets/background\ bloco\ login\ e\ cadastro.png');
   background-size: cover;
   background-position: center;
   opacity: 80%;
@@ -177,7 +177,7 @@ body {
 
 .card-login{
   border: 2px solid rgba(221, 184, 17, 0.822);
-  background: url('background\ bloco\ login\ e\ cadastro.png');
+  background: url('../assets/background\ bloco\ login\ e\ cadastro.png');
   background-size: cover;
   background-position: center;
   opacity: 80%;

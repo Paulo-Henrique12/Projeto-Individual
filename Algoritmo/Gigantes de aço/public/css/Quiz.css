@@ -1,24 +1,9 @@
 
 .paginaQuiz {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(7, 1fr);
     gap: 8px;
 }
-    
-.usuario {
-    padding: 5vw;
-    justify-content: center;
-    align-items: baseline;
-    background-color: black;
-    color: white;
-    display: flex;
-    font-size: 1.5vw;
-    border: 2px solid black;
-    border-radius: 1vw;
-    grid-row: span 7 / span 7;
-    height: 38.5vw;
-}
+
 
 .questoes {
     height: 4vw;
@@ -30,8 +15,7 @@
     font-size: 1.8vw;
     border: 2px solid black;
     border-radius: 1vw;
-    grid-column: span 4 / span 4;
-    grid-row: span 2 / span 2;
+    grid-column: span 5 / span 5;
 }
 
 .alternativas {
@@ -42,10 +26,9 @@
     border: 2px solid black;
     border-radius: 1vw;
     padding: 5vw;
-    grid-column: span 4 / span 4;
-    grid-row: span 5 / span 5;
-    grid-column-start: 2;
-    grid-row-start: 3;
+    grid-column: span 5 / span 5;
+    grid-row: span 3 / span 3;
+    grid-row-start: 2;
 }
 
 .questao1 {

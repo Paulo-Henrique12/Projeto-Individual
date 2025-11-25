@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AquaTech | Login</title>
+    <title>Gigantes de aço login</title>
 
     <script src="./js/sessao.js"></script>
 
-    <link rel="stylesheet" href="inicial2.css">
+    <link rel="stylesheet" href="./css/inicial2.css">
     <link rel="icon" href="./assets/icon/favicon2.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
@@ -24,7 +24,7 @@
             <h1 class="titulo">GIGANTES DE AÇO</h1>
             <ul class="navbar">
                 <li>
-                    <a href="pagina_inicial2.html">Inicial</a>
+                    <a href="index.html">Inicial</a>
                 </li>
                 <li>
                     <a href="#sobreMim">Sobre mim</a>
@@ -33,7 +33,7 @@
                     <a href="#">Login</a>
                 </li>
                 <li>
-                    <a href="cadastro.html">Cadastro</a>
+                    <a href="pagina_cadastro.html">Cadastro</a>
                 </li>
             </ul>
         </div>
@@ -59,9 +59,6 @@
                     <button class="botao" onclick="entrar()">Entrar</button>
                 </div>
 
-                <div id="div_aguardar" class="loading-div">
-                    <img src="./assets/circle-loading.gif" id="loading-gif">
-                </div>
 
                 <div id="div_erros_login"></div>
             </div>
@@ -76,7 +73,6 @@
 
 
     function entrar() {
-        aguardar();
 
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
@@ -84,7 +80,6 @@
         if (emailVar == "" || senhaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
-            finalizarAguardar();
             return false;
         }
         else {
@@ -115,10 +110,9 @@
                     sessionStorage.EMAIL_USUARIO = json.email;
                     sessionStorage.NOME_USUARIO = json.nome;
                     sessionStorage.ID_USUARIO = json.id;
-                    sessionStorage.AQUARIOS = JSON.stringify(json.aquarios)
 
                     setTimeout(function () {
-                        window.location = "./dashboard/cards.html";
+                        window.location = "teste_quiz.html";
                     }, 1000); // apenas para exibir o loading
 
                 });
@@ -129,7 +123,6 @@
 
                 resposta.text().then(texto => {
                     console.error(texto);
-                    finalizarAguardar(texto);
                 });
             }
 
