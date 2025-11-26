@@ -1,5 +1,18 @@
 var database = require("../database/config")
 
+function listar(idUsuario) {
+  var instrucao = `
+        SELECT idResultado, qtdAcertos, qtdErros, avaliacao
+        FROM resultados
+        WHERE fkPessoa= ${idUsuario}
+        ORDER BY idResultado DESC
+        LIMIT 1;
+    `;
+  console.log(instrucao);
+  return database.executar(instrucao);
+}
+
+
 function cadastrar(
   fkPessoa,
   fkQuiz,
@@ -9,8 +22,8 @@ function cadastrar(
 ) {
   var instrucao = `
         INSERT INTO resultados
-        (fkQuiz, fkPessoa, avaliacao, qtdAcertos, qtdErros)
-        VALUES (${fkQuiz}, ${fkPessoa}, ${avaliacao}, ${qtdAcertos}, ${qtdErros});`
+        (fkPessoa, fkQuiz, avaliacao, qtdAcertos, qtdErros)
+        VALUES (${fkPessoa}, ${fkQuiz}, ${avaliacao}, ${qtdAcertos}, ${qtdErros});`
     ;
 
   console.log("Executando SQL: \n" + instrucao);
@@ -19,4 +32,5 @@ function cadastrar(
 
 module.exports = {
   cadastrar,
+  listar,
 };

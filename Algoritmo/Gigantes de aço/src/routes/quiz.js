@@ -7,4 +7,8 @@ router.post("/cadastrar", function (req, res) {
     quizController.cadastrar(req, res);
 });
 
+router.get("/listar/:idUsuario", function (req, res) {
+    quizController.listar(req, res);
+});
+
 module.exports = router;

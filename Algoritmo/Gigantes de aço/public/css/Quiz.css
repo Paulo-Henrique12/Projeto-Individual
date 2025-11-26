@@ -8,23 +8,21 @@
 .questoes {
     height: 4vw;
     padding: 5vw;
-    background-color: rgba(221, 188, 40, 0.822);
+    opacity: 80%;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.8vw;
-    border: 2px solid black;
-    border-radius: 1vw;
     grid-column: span 5 / span 5;
 }
 
 .alternativas {
-    font-size: 5vw;
-    height: 23.8vw;
+    color: white;
+    font-size: 2vw;
+    height: 20vw;
     justify-content: center;
     align-items: baseline;
-    border: 2px solid black;
-    border-radius: 1vw;
     padding: 5vw;
     grid-column: span 5 / span 5;
     grid-row: span 3 / span 3;
@@ -103,9 +101,29 @@
 }
 
 body {
+    background: url('../assets/background\ quiz2.jpeg');
+    background-size: cover;
     color: var(--new-black);
     background-color: var(--new-white);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#btnSubmeter{
+    width: 80vw;
+    height: 2vw;
+    border-radius: 2vw;
+}
+
+#btnProx{
+    width: 80vw;
+    height: 2vw;
+    border-radius: 2vw;
+}
+
+#btnTentarNovamente{
+    width: 80vw;
+    height: 2vw;
+    border-radius: 2vw;
 }
 
 button {
@@ -124,6 +142,7 @@ button {
 
 .padding-8 {
     padding: 8px;
+
 }
 
 .text-bold {

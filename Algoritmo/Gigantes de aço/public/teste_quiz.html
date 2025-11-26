@@ -21,14 +21,13 @@
 
                 <div id="pontuacao" class="flex-colunar width-fit-content border-primary">
                     <div id="pontuacaoDuranteJogo" class="flex-colunar padding-8">
-                        <span class="width-fit-content">Quantidade de acertos: <span id="spanCertas"></span></span>
-                        <span class="width-fit-content">Quantidade de erros: <span id="spanErradas"></span></span>
+                        <span class="width-fit-content">Acertos em questões: <span id="spanCertas"></span></span>
+                        <span class="width-fit-content">Erros em questões: <span id="spanErradas"></span></span>
                     </div>
                     <div id="pontuacaoFinalJogo" class="flex-colunar padding-8">
                         <span id="pontuacaoFinal" class="width-fit-content">Pontuação Final:
                             <span id="spanPontuacaoFinal">***</span>
                         </span>
-                        <span id="msgFinal" class="width-fit-content">***</span>
                     </div>
                 </div>
 
@@ -42,17 +41,12 @@
                     <div id="jogo" class="width-fit-content flex-colunar border-secondary">
 
                         <div id="infoQuestao" class="padding-8">
-                            <span>Questão atual: <span id="spanNumeroDaQuestaoAtual"></span> de <span
-                                    id="qtdQuestoes"></span>
-                                questões.</span>
+                            <span>Questão atual: <span id="spanNumeroDaQuestaoAtual"></span>
+
                         </div>
 
                         <div id="perguntaDaQuestaoAtual" class="padding-8">
                             <span id="spanQuestaoExibida" class="text-bold"></span>
-                        </div>
-
-                        <div id="infoAlternativas" class="padding-8">
-                            <span><em>Escolha uma opção dentre as abaixo:</em></span>
                         </div>
 
                         <div id="opcoes" class="flex-colunar padding-8">
@@ -78,35 +72,17 @@
                         </div>
 
                         <div id="botoes" class="flex-colunar padding-8">
-                            <button onclick="submeter()" id="btnSubmeter">Submeter resposta</button>
-                            <button onclick="avancar()" id="btnProx" disabled>Avançar para próxima questão</button>
+                            <button onclick="submeter()" id="btnSubmeter">Validar resposta</button>
+                            <button onclick="avancar()" id="btnProx" disabled>Próxima alternativa</button>
                             <!-- <button onclick="finalizar()" id="btnConcluir" disabled>Finalizar Quiz</button> -->
                             <button onclick="tentarNovamente()" id="btnTentarNovamente" disabled>Tentar
-                                novamente</button>
+                                de novo</button>
                         </div>
-
                     </div>
-
-
                 </div>
-
             </div>
-
-
-
-
-
-
         </div>
-
-
-
-
     </div>
-
-
-
-
 </body>
 
 </html>
@@ -282,7 +258,7 @@
         }
 
         if (!hasChecked) {
-            alert("Não há alternativas escolhidas. Escolha uma opção.")
+            alert("Você deve selecionar alguma das alternativas!")
         } else {
             btnSubmeter.disabled = true
             btnProx.disabled = false
@@ -312,7 +288,6 @@
         if (numeroDaQuestaoAtual < quantidadeDeQuestoes - 1) {
             preencherHTMLcomQuestaoAtual(numeroDaQuestaoAtual)
         } else if (numeroDaQuestaoAtual == quantidadeDeQuestoes - 1) {
-            alert("Atenção... a próxima é a ultima questão!")
             preencherHTMLcomQuestaoAtual(numeroDaQuestaoAtual)
         } else {
             finalizarJogo()
@@ -437,6 +412,6 @@
             })
             .catch((err) => {
                 console.error("Erro ao salvar resultado:", err);
-    });
+            });
     }
 </script>
